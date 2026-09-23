@@ -1,1 +1,7 @@
+.venv/
+__pycache__/
+.idea/
+token.py
+token.txt
+bookings.json
 
