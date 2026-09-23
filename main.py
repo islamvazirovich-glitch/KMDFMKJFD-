@@ -16,7 +16,9 @@ from aiogram.types import (
 from aiogram.utils.keyboard import InlineKeyboardBuilder, ReplyKeyboardBuilder
 
 # ==================== НАСТРОЙКИ ====================
-BOT_TOKEN = "8825589537:AAEGdGMUudJ0AG0kJZyVXbvjOp0qUkO-TBw"
+TOKEN_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "token.txt")
+with open(TOKEN_FILE, "r", encoding="utf-8") as f:
+    BOT_TOKEN = f.read().strip()
 TIMEZONE = pytz.timezone("Asia/Yekaterinburg")
 
 TIME_WINDOWS = [(6, 8), (17, 21)]
